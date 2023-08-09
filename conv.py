@@ -129,33 +129,3 @@ plt.tight_layout()  # Adjust the layout to avoid overlapping
 plt.show()
 
 
-
-#Function to predict the label for a given image
-#def predict_label(image_path, model, class_labels):
-#    image = Image.open(image_path)
-#    image = data_transform(image).unsqueeze(0)  # Add batch dimension
-#    output = model(image)
-#    _, predicted_class = torch.max(output, 1)
-#
-#
-#
-#    predicted_label = class_labels[predicted_class.item()]
-#    return predicted_label
-#
-#
-#
-#
-#
-#
-#
-## Input the image path from the user
-#while True:
-#    image_path = input("Enter the path of the image (or 'exit' to quit): ")
-#    if image_path.lower() == "exit":
-#        break
-#
-#    try:
-#        predicted_label = predict_label(image_path, model, class_labels)
-#        print(f"Predicted label: {predicted_label}")
-#    except Exception as e:
-#        print(f"Error: {e}")
